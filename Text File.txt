@@ -1,3 +1,5 @@
+https://www.linkedin.com/feed/update/urn:li:activity:6711210782010564608/
+
 
  .cc-experience-header:hover {
     background-image: url(../images/nsic.jpg);
