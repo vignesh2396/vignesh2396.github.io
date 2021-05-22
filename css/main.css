@@ -3071,7 +3071,8 @@ h6,
 }
 
 p {
-  line-height: 1.61em;
+  line-height    : 1.61em;
+  /* padding-left: .5rem; */
 }
 
 .description p,

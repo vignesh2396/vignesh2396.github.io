@@ -1,16 +1,20 @@
-image need to be changed
-add resume to the folder and link it with download cv button.
-link social media links to each link - linkedin, github,whatsapp. 
-change pictures in the portfolio (need to crop the screenshoted images)
-change names of the project in python portfolio.
-Need to add apprentiship training in work experience.
-education details from advance diploma, mba, engineering.
 
-
- .image1:hover{
-background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Aex4XR9t6hC4XTUCUHeuzwAAAA%26pid%3DApi&f=1);
-background-size: cover;}
-.image:hover p,
-.image:hover div{
-  display: none;
+ .cc-experience-header:hover {
+    background-image: url(../images/nsic.jpg);
+    background-size : cover;
 }
+
+.cc-experience-header:hover p,
+.cc-experience-header:hover div {
+    display: none;
+}
+
+/* working */
+
+<a href="https://api.whatsapp.com/send?phone=9789084072">Send Message</a>
+
+
+/* not working */
+href="whatsapp:contact=9789084072@s.whatsapp.com&message="I'd like to chat with you"
+
+href="whatsapp://send?abid=9789084072&text=Hello%2C%20World!"
