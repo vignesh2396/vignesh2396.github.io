@@ -1,4 +1,6 @@
-https://www.linkedin.com/feed/update/urn:li:activity:6711210782010564608/
+To do list:
+
+resume for work and omni food website github link need to be added in the portfolio
 
 
  .cc-experience-header:hover {
