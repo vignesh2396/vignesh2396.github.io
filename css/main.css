@@ -7550,10 +7550,10 @@ Created using IcoMoon - icomoon.io
 
 /* Contact Information Style */
 .cc-contact-information {
-  width           : 100%;
-  position        : relative;
-  overflow        : hidden;
-  background-color: #378C3F;
+  width     : 100%;
+  position  : relative;
+  overflow  : hidden;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center / cover no-repeat url("../images/Abstract-Envelope.svg");
 }
 
 .cc-contact-information .cc-contact {

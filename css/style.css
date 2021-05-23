@@ -13,15 +13,8 @@ hr {
     object-fit: cover;
 }
 
-.badge {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-}
-
 .press-image {
-    width : 15%;
-    margin: 20px 20px 50px;
+    width: 80%;
 }
 
 .bold-text {
@@ -96,7 +89,7 @@ hr {
 }
 
 #mba {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/madras.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mba.png);
     background-size : cover;
     font-weight     : 900;
 }
