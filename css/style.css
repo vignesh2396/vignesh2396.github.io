@@ -46,7 +46,7 @@ hr {
     text-transform: uppercase;
     color: #fff;
     font-family: verdana;
-    margin: .5rem 0;
+    margin: 0;
 }
 
 .div-content{
@@ -54,6 +54,7 @@ hr {
     height: 2rem;
     overflow: hidden;
     color: #378c3f;
+
 }
 .span-text{
       display: inline-block;
