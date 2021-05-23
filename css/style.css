@@ -39,3 +39,35 @@ hr {
         margin: 3rem auto;
     }
 }
+
+/* ===== text-changing animation ===== */
+
+.h1-text{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: verdana;
+}
+
+.div-content{
+    display: inline-block;
+    height: 3rem;
+    overflow: hidden;
+    color: #378c3f;
+}
+.span-text{
+      display: inline-block;
+      animation: rotate 5s infinite;
+}
+
+@keyframes rotate{
+          
+      0%{ transform:translateY(0); }
+
+      /* 25%{ transform:translateY(-40px); }              */
+
+      50%{ transform:translateY(-60px); }             
+
+      75%{ transform:translateY(-120px); }
+
+      100%{ transform:translateY(0); }
+}

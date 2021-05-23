@@ -1,8 +1,18 @@
 To do list:
 
 resume for work and omni food website github link need to be added in the portfolio
+-------------------------------------
 
+https://vignesh2396.github.io/resume-for-work/index.html
 
+https://vignesh2396.github.io/Omnifood/index.html
+-------------------------------------
+/* font awesome icons names */
+
+file-code-o
+code-branch
+
+--------------------------------------
  .cc-experience-header:hover {
     background-image: url(../images/nsic.jpg);
     background-size : cover;
@@ -13,10 +23,13 @@ resume for work and omni food website github link need to be added in the portfo
     display: none;
 }
 
+--------------------------------------
+
 /* working */
 
 <a href="https://api.whatsapp.com/send?phone=9789084072">Send Message</a>
 
+--------------------------------------
 
 /* not working */
 href="whatsapp:contact=9789084072@s.whatsapp.com&message="I'd like to chat with you"
