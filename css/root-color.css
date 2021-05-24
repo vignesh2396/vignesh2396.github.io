@@ -1,0 +1,14 @@
+:root {
+    --text         : #EAEAE0;
+    --default-color        : #378c3f;
+    --design       : #9861e2;
+    --dviolet      : #4c23b7;
+    --btn-bg: #1DC690;
+    --btn-bg-d: #18a176;
+    --cut-out: #18a176;
+    --heading-text: #265B8B;
+    --sub-heading: #0B1C48;
+    --b-gradient   : linear-gradient(90deg, #0f5ae9, #4c23b7);
+    --lblv-gradient: linear-gradient(90deg, #63c0e8, #9861e2);
+    --lbv-gradient : linear-gradient(90deg, #63c0e8, #4c23b7);
+}

@@ -1,12 +1,29 @@
+/* button effect */
+.btn-bg {
+    background-color: var(--btn-bg);
+    margin-right    : 1rem;
+}
+
+.btn-bg:hover {
+    background-color: var(--btn-bg-d);
+}
+
+span.btn-bg{
+    margin: 0;
+}
+/* general styles */
+body {
+    background-image: url(../images/Scattered-Forcefields.svg);
+}
+
 hr {
-    border       : 6px dotted #378c3f;
+    border       : 6px dotted var(--design);
     border-bottom: none;
     width        : 4%;
-    /* margin    : 3rem auto; */
 }
 
 .page-header-image {
-    background-image: url('../images/Abstract-Envelope.svg')
+    background-image: url('../images/bgradient.svg')
 }
 
 .cc-profile-image img {
@@ -19,34 +36,26 @@ hr {
 
 .bold-text {
     font-weight: 600;
+    color: var(--sub-heading);
 }
-
-@media (max-width: 768px) {
-    p {
-        padding-left: .5rem;
-    }
-}
-
-@media (min-width: 768px) {
-    hr {
-        margin: 3rem auto;
-    }
+a.bold-text{
+    margin-top: 30px;
 }
 
 /* ===== text-changing animation ===== */
 
 .h1-text {
     text-transform: uppercase;
-    color         : #fff;
+    color         : var(--text);
     font-family   : verdana;
     margin        : .5rem 0;
 }
 
 .div-content {
-    display : inline-block;
+    display : inline-flex;
     height  : 2rem;
     overflow: hidden;
-    color   : #378c3f;
+    color   : var(--design);
 }
 
 .span-text {
@@ -106,66 +115,8 @@ hr {
     font-weight     : 900;
 }
 
-/* ===== Social media icons effect ===== */
-.whatsapp:before,
-.github:before,
-.linkedin:before {
-    background: #fff;
-    background: linear-gradient(45deg,
-            rgba(255, 255, 255, .7) 0%,
-            rgba(255, 255, 255, .3) 49%,
-            rgba(255, 255, 255, .5) 50%);
-}
-
-.social-media-links {
-    display        : flex;
-    width          : 100%;
-    justify-content: center;
-    margin-top     : 300px;
-}
-
-.social-media-link {
-    width          : 60px;
-    height         : 60px;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    text-decoration: none;
-    color          : #fff;
-    font-size      : 23px;
-    position       : relative;
-    transition     : transform 0.5s ease-in-out;
-    margin         : 0 20px;
-}
-
-.social-media-link>i {
-    z-index: 1;
-}
-
-.social-media-link:before {
-    width              : 60px;
-    height             : 60px;
-    border-radius      : 4px;
-    content            : "";
-    position           : absolute;
-    background-size    : 300%;
-    background-position: 0% 0%;
-    transition         : background-position 0.55s cubic-bezier(0.79, 0.14, 0.15, 0.86);
-}
-
-.social-media-link:hover,
-.social-media-link:active,
-.social-media-link:focus {
-    transform      : translateY(-16px);
-    text-decoration: none;
-}
-
-.social-media-link:hover:before,
-.social-media-link:active:before,
-.social-media-link:focus:before {
-    background-position: top right;
-}
-
-.social-media-link+.social-media-link {
-    margin-left: 4px;
+/* grid for header text, animation and button. */
+.grid-main {
+    grid-area: main;
+    margin-top: 1rem;
 }
