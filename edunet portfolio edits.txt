@@ -1,0 +1,36 @@
+Edunet portfolio
+
+changes made 25/05/2021:
+
+for min-width:991px :
+1. font-size increased.
+2. changed education section into two columns.
+
+experience section:
+bullet points added and colored.
+
+changes made 24/05/2021:
+
+header section:
+1. grid added to seperate image and text. 
+2. cutout banner image created for big screen.
+3. background image changed.
+4. button and social media icon colors changed.
+
+contact form section:
+1. background image changed.
+2. button color, text area background color changed.
+
+footer section:
+1. icon hover colors changed.
+
+general changes:
+1. font color changed - heading and sub heading.
+2. some unused code removed from main.css.
+3. seperate css stylesheet created for media query and root color.
+4. favicon changed.
+5. navbar brand removed.
+6. name added.
+
+for small screen:
+1. used dipslay: none for upcoming project in portfolio section. 
