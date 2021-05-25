@@ -3082,7 +3082,7 @@ p.description {
 
 .title {
   font-weight: 700;
-  color: var(--heading-text);
+  color      : var(--heading-text);
 }
 
 .title.title-up {
@@ -7486,27 +7486,6 @@ Created using IcoMoon - icomoon.io
 
 .progress-container .aos-animate {
   transform: scaleX(1);
-}
-
-/* Experience Style */
-.cc-experience .cc-experience-header {
-  padding-top   : 60px;
-  padding-right : 0;
-  text-align    : center;
-  color         : var(--text);
-  text-transform: uppercase;
-}
-
-/* Education Style */
-.cc-education .h5 {
-  margin-bottom: 0;
-}
-
-.cc-education .cc-education-header {
-  padding-top  : 60px;
-  padding-right: 0;
-  text-align   : center;
-  color        : var(--text);
 }
 
 /* Contact Information Style */

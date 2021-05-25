@@ -1,4 +1,5 @@
 /* button effect */
+
 .btn-bg {
     background-color: var(--btn-bg);
     margin-right    : 1rem;
@@ -8,10 +9,12 @@
     background-color: var(--btn-bg-d);
 }
 
-span.btn-bg{
+span.btn-bg {
     margin: 0;
 }
+
 /* general styles */
+
 body {
     background-image: url(../images/Scattered-Forcefields.svg);
 }
@@ -23,7 +26,7 @@ hr {
 }
 
 .page-header-image {
-    background-image: url('../images/bgradient.svg')
+    background-image: url('../images/bgradient.svg');
 }
 
 .cc-profile-image img {
@@ -36,13 +39,14 @@ hr {
 
 .bold-text {
     font-weight: 600;
-    color: var(--sub-heading);
+    color      : var(--sub-heading);
 }
-a.bold-text{
+
+a.bold-text {
     margin-top: 30px;
 }
 
-/* ===== text-changing animation ===== */
+/* text-changing animation */
 
 .h1-text {
     text-transform: uppercase;
@@ -64,7 +68,6 @@ a.bold-text{
 }
 
 @keyframes rotate {
-
     0% {
         transform: translateY(0);
     }
@@ -78,10 +81,44 @@ a.bold-text{
     }
 
     /* 99%{ transform:translateY(-120px); } */
-
     100% {
         transform: translateY(0);
     }
+}
+
+/* Experience Style */
+.cc-experience .cc-experience-header {
+    padding-top   : 60px;
+    padding-right : 0;
+    text-align    : center;
+    color         : var(--text);
+    text-transform: uppercase;
+}
+
+.points {
+    list-style: none;
+}
+
+.points li::before {
+    content    : "\2022";
+    color      : var(--btn-bg);
+    font-weight: 900;
+    font-size  : 1.5rem;
+    display    : inline-block;
+    width      : 1rem;
+    margin-left: -1rem;
+}
+
+/* Education Style */
+.cc-education .h5 {
+    margin-bottom: 0;
+}
+
+.cc-education .cc-education-header {
+    padding-top  : 60px;
+    padding-right: 0;
+    text-align   : center;
+    color        : var(--text);
 }
 
 /* Education and experience section images */
@@ -116,7 +153,8 @@ a.bold-text{
 }
 
 /* grid for header text, animation and button. */
+
 .grid-main {
-    grid-area: main;
+    grid-area : main;
     margin-top: 1rem;
 }
