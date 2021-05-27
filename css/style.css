@@ -1,17 +1,21 @@
-/* button effect */
+/* Index 
+button effect
+1 - General styles
+2 - profile section
+    2.1 - background
+    2.2 - images
+    2.3 - social button
+    2.4 - text changing animation
+3 - professional section
+4 - 
+experience
+education
+contact information 
+footer - social button
 
-.btn-bg {
-    background-color: var(--btn-bg);
-    margin-right    : 1rem;
-}
+*/
 
-.btn-bg:hover {
-    background-color: var(--btn-bg-d);
-}
 
-span.btn-bg {
-    margin: 0;
-}
 
 /* general styles */
 
@@ -44,6 +48,114 @@ hr {
 
 a.bold-text {
     margin-top: 30px;
+}
+
+/* Body */
+/* Profile Page Background Style */
+.page-header {
+    background: rgba(44, 44, 44, 0.2);
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+    /* Standard syntax */
+}
+
+.page-header .btn {
+    width: 140px;
+}
+
+/* Profile Image Style */
+@-webkit-keyframes pulsate {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity  : 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity  : 0.0;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity  : 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity  : 0.0;
+    }
+}
+
+.cc-profile-image a {
+    position: relative;
+}
+
+.cc-profile-image a:before {
+    content                          : "";
+    border                           : 15px solid rgba(55, 140, 63, 0.6);
+    border-radius                    : 50%;
+    height                           : 180px;
+    width                            : 180px;
+    position                         : absolute;
+    left                             : 0;
+    -webkit-animation                : pulsate 1.6s ease-out;
+    animation                        : pulsate 1.6s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count        : infinite;
+    opacity                          : 0.0;
+    z-index                          : 99;
+}
+
+.cc-profile-image img {
+    position     : relative;
+    border-radius: 50%;
+    height       : 180px;
+    width        : 180px;
+    padding      : 0;
+    margin       : 0;
+    border       : 15px solid transparent;
+    z-index      : 9999;
+    transition   : all .3s ease-out;
+}
+
+.cc-profile-image a:hover img {
+    transform: scale(1.06, 1.06);
+}
+
+.cc-profile-image a:hover:before {
+    -webkit-animation: none;
+    animation        : none;
+}
+
+/* Profile Page Social button Style */
+.button-container .btn-default {
+    margin-right: 8px;
+}
+
+.btn-bg {
+    background-color: var(--btn-bg);
+    margin-right    : 1rem;
+}
+
+.btn-bg:hover {
+    background-color: var(--btn-bg-d);
+}
+
+span.btn-bg {
+    margin: 0;
 }
 
 /* text-changing animation */
@@ -85,6 +197,29 @@ a.bold-text {
         transform: translateY(0);
     }
 }
+
+/* Professional Skills Style */
+.progress-container {
+    margin-bottom: 20px;
+    font-size    : 18px;
+}
+
+.progress-container .progress-bar {
+    height          : 5px;
+    transform       : scaleX(0);
+    transition      : transform 2s ease-in-out;
+    transform-origin: 0% 0%;
+}
+
+.progress-container .progress {
+    height   : 5px;
+    font-size: 18px;
+}
+
+.progress-container .aos-animate {
+    transform: scaleX(1);
+}
+
 
 /* Experience Style */
 .cc-experience .cc-experience-header {
@@ -157,4 +292,36 @@ a.bold-text {
 .grid-main {
     grid-area : main;
     margin-top: 1rem;
+}
+
+/* Contact Information Style */
+.cc-contact-information {
+    width     : 100%;
+    position  : relative;
+    overflow  : hidden;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center / cover no-repeat url("../images/bgradient.svg");
+}
+
+.cc-contact-information .cc-contact {
+    padding: 8% 0 8% 20%;
+}
+
+@media (max-width: 767px) {
+    .cc-contact-information .cc-contact {
+        padding: 30px 0px 30px 0px;
+    }
+}
+
+/* Footer */
+/* Social button style */
+.cc-linkedin:hover i {
+    color: #3b5998;
+}
+
+.cc-github:hover i {
+    color: #111;
+}
+
+.cc-whatsapp:hover i {
+    color: var(--default-color);
 }

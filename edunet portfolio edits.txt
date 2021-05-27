@@ -34,3 +34,13 @@ general changes:
 
 for small screen:
 1. used dipslay: none for upcoming project in portfolio section. 
+
+------------------------------------
+color palettes
+
+https://www.canva.com/colors/color-palettes/northern-lights-3/
+
+https://www.canva.com/colors/color-palettes/summer-splash/
+
+https://www.canva.com/colors/color-palettes/bridge-across-water/
+-------------------------------------
