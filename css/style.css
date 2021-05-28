@@ -1,32 +1,80 @@
 /* Index 
-button effect
 1 - General styles
 2 - profile section
     2.1 - background
     2.2 - images
     2.3 - social button
     2.4 - text changing animation
+    2.4 - grid template
 3 - professional section
-4 - 
-experience
-education
-contact information 
-footer - social button
-
+4 - experience
+5 - education
+6 - contact information 
+7 - footer - social button
+8 - media query
+    8.1 - max-width: 768px
+    8.2 - max-width:991px
+    8.3 - min-width: 768px
+    8.4 - min-width:991px
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Sacramento&display=swap');
 
+:root {
+    --text         : #EAEAE0;
+    --default-color: #378c3f;
+    --design       : #9861e2;
+    --dviolet      : #4c23b7;
+    --btn-bg       : #1DC690;
+    --btn-bg-d     : #18a176;
+    --cut-out      : #18a176;
+    --heading-text : #265B8B;
+    --heading      : #0B1C48;
+    --sub-heading  : #1dc690;
+}
 
-/* general styles */
-
+/* 1. general styles */
 body {
-    background-image: url(../images/Scattered-Forcefields.svg);
+    color                  : #0B1C48;
+    font-size              : 14px;
+    font-family            : "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing : antialiased;
+    background-image       : url(../images/Scattered-Forcefields.svg);
+}
+
+.main {
+    position  : relative;
+    background: var(--text);
 }
 
 hr {
     border       : 6px dotted var(--design);
     border-bottom: none;
     width        : 4%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    font-family: 'Sacramento', 'cursive';
+}
+
+.title,
+.heading {
+    font-weight: 700;
+}
+
+.title {
+    color: var(--heading-text);
+}
+
+.heading {
+    color: var(--dviolet);
 }
 
 .page-header-image {
@@ -50,23 +98,18 @@ a.bold-text {
     margin-top: 30px;
 }
 
-/* Body */
-/* Profile Page Background Style */
+/* 2. Body */
+/* 2.1 Profile Page Background Style */
 .page-header {
     background: rgba(44, 44, 44, 0.2);
-    /* For browsers that do not support gradients */
-    /* For Safari 5.1 to 6.0 */
-    /* For Opera 11.1 to 12.0 */
-    /* For Firefox 3.6 to 15 */
     background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
-    /* Standard syntax */
 }
 
 .page-header .btn {
     width: 140px;
 }
 
-/* Profile Image Style */
+/* 2.2 Profile Image Style */
 @-webkit-keyframes pulsate {
     0% {
         transform: scale(0.6, 0.6);
@@ -105,7 +148,7 @@ a.bold-text {
 
 .cc-profile-image a:before {
     content                          : "";
-    border                           : 15px solid rgba(55, 140, 63, 0.6);
+    border                           : 15px solid rgb(29, 198, 144);
     border-radius                    : 50%;
     height                           : 180px;
     width                            : 180px;
@@ -135,18 +178,17 @@ a.bold-text {
     transform: scale(1.06, 1.06);
 }
 
-.cc-profile-image a:hover:before {
-    -webkit-animation: none;
-    animation        : none;
+.fa-vimeo {
+    font-size  : 2rem;
+    padding-top: 1rem;
 }
 
-/* Profile Page Social button Style */
-.button-container .btn-default {
-    margin-right: 8px;
-}
+/* 2.3 Profile Page Social button Style */
 
 .btn-bg {
     background-color: var(--btn-bg);
+    color           : #0B1C48;
+    font-weight     : 600;
     margin-right    : 1rem;
 }
 
@@ -158,7 +200,7 @@ span.btn-bg {
     margin: 0;
 }
 
-/* 2.4 name font style */
+/* 2.4 text changing animation */
 
 .h1-text {
     font-family: 'Sacramento', 'cursive';
@@ -178,6 +220,43 @@ span.btn-bg {
     color          : var(--btn-bg);
 }
 
+/* .h2-text {
+    text-transform: uppercase;
+    color         : var(--text);
+    font-family   : verdana;
+    margin        : .5rem 0;
+}
+
+.div-content {
+    display : inline-flex;
+    height  : 2rem;
+    overflow: hidden;
+    color   : var(--design);
+}
+
+.span-text {
+    display  : inline-block;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-41px);
+    }
+
+    66% {
+        transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+} */
+
 /* 2.4 grid for header text, animation and button. */
 
 .grid-main {
@@ -185,7 +264,7 @@ span.btn-bg {
     margin-top: 1rem;
 }
 
-/* Professional Skills Style */
+/* 3. Professional Skills Style */
 .progress-container {
     margin-bottom: 20px;
     font-size    : 18px;
@@ -208,7 +287,7 @@ span.btn-bg {
 }
 
 
-/* Experience Style */
+/* 4. Experience Style */
 .cc-experience .cc-experience-header {
     padding-top   : 60px;
     padding-right : 0;
@@ -231,7 +310,7 @@ span.btn-bg {
     margin-left: -1rem;
 }
 
-/* Education Style */
+/* 5. Education Style */
 .cc-education .h5 {
     margin-bottom: 0;
 }
@@ -243,45 +322,37 @@ span.btn-bg {
     color        : var(--text);
 }
 
-/* Education and experience section images */
+/* 4 & 5 Education and experience section images */
+#nsic,
+#diploma,
+#mba,
+#engg,
+#school {
+    background-size: cover;
+    font-weight    : 900;
+}
 
 #nsic {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/nsic.jpg);
-    background-size : cover;
 }
 
 #diploma {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/nsti.jpg);
-    background-size : cover;
-    font-weight     : 900;
 }
 
 #mba {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/mba.png);
-    background-size : cover;
-    font-weight     : 900;
 }
 
 #engg {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/engg.jpeg);
-    background-size : cover;
-    font-weight     : 900;
 }
 
 #school {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/school.jpeg);
-    background-size : cover;
-    font-weight     : 900;
 }
 
-/* grid for header text, animation and button. */
-
-.grid-main {
-    grid-area : main;
-    margin-top: 1rem;
-}
-
-/* Contact Information Style */
+/* 6. Contact Information Style */
 .cc-contact-information {
     width     : 100%;
     position  : relative;
@@ -299,7 +370,7 @@ span.btn-bg {
     }
 }
 
-/* Footer */
+/* 7. Footer */
 /* Social button style */
 .cc-linkedin:hover i {
     color: #3b5998;
@@ -311,4 +382,109 @@ span.btn-bg {
 
 .cc-whatsapp:hover i {
     color: var(--default-color);
+}
+
+/* 8. media query */
+/* 8.1 max-width: 768px */
+@media (max-width: 768px) {
+    p {
+        padding-left: .5rem;
+    }
+}
+
+/* 8.2 max-width:991px */
+@media (max-width:991px) {
+
+    /* ----------Note ----------
+    remove this upcoming class from the div 
+    while uploading new projects....
+    */
+    .upcoming {
+        display: none;
+    }
+}
+
+/* 8.3 min-width: 768px */
+@media (min-width: 768px) {
+    hr {
+        margin: 3rem auto;
+    }
+
+    /* grid template*/
+    .page-header .container>.content-center {
+        display      : grid;
+        grid-template: auto / 30fr 70fr;
+        grid-template-areas:
+            "side main";
+        gap: 15%;
+    }
+
+    /* cutout effect for profile image */
+    .cutout-effect {
+        width    : 18rem;
+        height   : 18rem;
+        transform: rotate(45deg);
+    }
+
+    .cutout-effect span {
+        position        : absolute;
+        left            : 0;
+        width           : 100%;
+        height          : 5px;
+        background-color: var(--btn-bg);
+    }
+
+    .cutout-effect span:first-child {
+        transform       : rotate(90deg);
+        transform-origin: 0 0;
+        background-color: var(--design);
+    }
+
+    .cutout-effect span:nth-child(2) {
+        bottom          : 0;
+        z-index         : 1;
+        background-color: var(--dviolet);
+
+    }
+
+    .cutout-effect span:nth-child(3) {
+        transform       : rotate(-90deg);
+        transform-origin: 100% 0;
+        background-color: var(--heading-text);
+
+    }
+
+    .cutout-effect span:nth-child(4) {
+        z-index: 1;
+    }
+
+    .cutout-effect .img-box {
+        width              : 100%;
+        height             : 100%;
+        background-image   : url("../images/vignesh.png");
+        background-size    : cover;
+        background-position: center;
+        transform          : rotate(-45deg);
+        box-shadow         : 0 0 20px rgba(0, 0, 0, 0.5);
+        border-radius      : 5px;
+    }
+
+    .cc-profile-image a {
+        display: none;
+    }
+}
+
+/* 8.4 min-width:991px */
+@media screen and (min-width:991px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .card-fold {
+        display: flex;
+    }
+
+    .card-fold .card {
+        margin: 1rem;
+    }
 }

@@ -1,4 +1,18 @@
 Edunet portfolio
+------------------------------------------------------------------------
+
+changes made - 27/05/2021
+
+1. h2 and navbar font size changed.
+2. navbar text changed from uppercase to captalize.
+3. section heading color changed.
+4. removed unused css styles and css files.
+
+profile page:
+1. name and designitation font-family changed.
+2. background blink color changed.
+3. span border color changed. 
+------------------------------------------------------------------------
 
 changes made 25/05/2021:
 
@@ -8,6 +22,7 @@ for min-width:991px :
 
 experience section:
 bullet points added and colored.
+------------------------------------------------------------------------
 
 changes made 24/05/2021:
 
@@ -35,12 +50,13 @@ general changes:
 for small screen:
 1. used dipslay: none for upcoming project in portfolio section. 
 
-------------------------------------
-color palettes
+------------------------------------------------------------------------
+
+color palettes used in this portfolio
 
 https://www.canva.com/colors/color-palettes/northern-lights-3/
 
 https://www.canva.com/colors/color-palettes/summer-splash/
 
 https://www.canva.com/colors/color-palettes/bridge-across-water/
--------------------------------------
+-------------------------------------------------------------------------
