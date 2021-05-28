@@ -158,44 +158,31 @@ span.btn-bg {
     margin: 0;
 }
 
-/* text-changing animation */
+/* 2.4 name font style */
 
 .h1-text {
-    text-transform: uppercase;
-    color         : var(--text);
-    font-family   : verdana;
-    margin        : .5rem 0;
+    font-family: 'Sacramento', 'cursive';
+    font-size  : 4.5rem;
+    margin     : 1rem 0;
 }
 
-.div-content {
-    display : inline-flex;
-    height  : 2rem;
-    overflow: hidden;
-    color   : var(--design);
+#programmer {
+    font-size  : 3rem;
+    font-style : italic;
+    font-weight: normal;
+    line-height: 2rem;
 }
 
-.span-text {
-    display  : inline-block;
-    animation: rotate 5s infinite;
+.pro {
+    text-decoration: underline;
+    color          : var(--btn-bg);
 }
 
-@keyframes rotate {
-    0% {
-        transform: translateY(0);
-    }
+/* 2.4 grid for header text, animation and button. */
 
-    33% {
-        transform: translateY(-41px);
-    }
-
-    66% {
-        transform: translateY(-80px);
-    }
-
-    /* 99%{ transform:translateY(-120px); } */
-    100% {
-        transform: translateY(0);
-    }
+.grid-main {
+    grid-area : main;
+    margin-top: 1rem;
 }
 
 /* Professional Skills Style */
