@@ -1,6 +1,10 @@
 const backToTopButton = document.querySelector("#back-to-top-btn");
 
-window.addEventListener("scroll", scrollFunction);
+let scrollTimeout;
+window.addEventListener("scroll", () => {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(scrollFunction, 100);
+});
 
 function scrollFunction() {
   if (window.pageYOffset > 300) {
@@ -22,26 +26,21 @@ function scrollFunction() {
   }
 }
 
-backToTopButton.addEventListener("click", smoothScrollBackToTop);
+backToTopButton.addEventListener("click", () => smoothScroll(0));
 
-function smoothScrollBackToTop() {
-  const targetPosition = 0;
+export function smoothScroll(targetPosition, duration = 750) {
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
-  const duration = 750;
   let start = null;
-
-  window.requestAnimationFrame(step);
 
   function step(timestamp) {
     if (!start) start = timestamp;
     const progress = timestamp - start;
-    window.scrollTo(
-      0,
-      easeInOutCubic(progress, startPosition, distance, duration)
-    );
+    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
     if (progress < duration) window.requestAnimationFrame(step);
   }
+
+  window.requestAnimationFrame(step);
 }
 
 function easeInOutCubic(t, b, c, d) {
@@ -69,3 +68,11 @@ setInterval(() => {
     slides[currentIndex].classList.add("active");
   }
 }, 5000);
+
+document.querySelector('form').addEventListener('submit', (e) => {
+  const email = document.querySelector('input[type="email"]').value;
+  if (!email.includes('@')) {
+    e.preventDefault();
+    alert('Please enter a valid email address.');
+  }
+});

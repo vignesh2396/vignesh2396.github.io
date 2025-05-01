@@ -32,6 +32,8 @@
     --heading-text : #265B8B;
     --heading      : #0B1C48;
     --sub-heading  : #1dc690;
+    --primary-color: #378c3f;
+    --secondary-color: #2c2c2c;
 }
 
 /* 1. general styles */
@@ -42,6 +44,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing : antialiased;
     background-image       : url(../images/Scattered-Forcefields.svg);
+}
+
+body{
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .main {
@@ -187,10 +193,8 @@ a.bold-text {
 /* 2.3 Profile Page Social button Style */
 
 .btn-bg {
-    background-color: var(--btn-bg);
-    color           : #0B1C48;
-    font-weight     : 600;
-    margin-right    : 1rem;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s;
 }
 
 .btn-bg:hover {
@@ -390,6 +394,16 @@ span.btn-bg {
 @media (max-width: 768px) {
     p {
         padding-left: .5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cc-profile-image img {
+        width: 120px;
+        height: 120px;
     }
 }
 
@@ -646,4 +660,23 @@ span.btn-bg {
         word-break: break-word;
     }
 
+}
+
+/* fade-in animation */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a.btn:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }

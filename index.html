@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Vignesh M, a web developer and Python programmer." />
+    <meta name="keywords" content="Vignesh M, Portfolio, Web Developer, Python Programmer" />
+    <meta property="og:title" content="Vignesh M Portfolio" />
+    <meta property="og:description" content="Portfolio of Vignesh M, a web developer and Python programmer." />
+    <meta property="og:image" content="images/vignesh.png" />
+    <meta property="og:url" content="https://vignesh2396.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Vignesh M Portfolio</title>
     <link
       rel="shortcut icon"
       href="./apple-touch-icon.png"
       type="image/x-icon"
     />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
       rel="stylesheet"
@@ -31,6 +39,18 @@
         }
       </style>
     </noscript>
+    <style>
+      
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
   </head>
 
   <body id="top">
@@ -101,8 +121,8 @@
     <!-- ============ Header section end ==============-->
 
     <!-- ============ profile page start ==============-->
-    <div class="page-content">
-      <div class="profile-page">
+    <main>
+      <section class="profile-page">
         <div class="wrapper">
           <div class="page-header page-header-small" filter-color="green">
             <div class="page-header-image" data-parallax="true"></div>
@@ -114,7 +134,7 @@
                   <span></span>
                   <span></span>
                   <div class="cc-profile-image img-box">
-                    <a href="#"><img src="images/vignesh.png" alt="Image" /></a>
+                    <a href="#"><img src="images/vignesh.png" alt="Vignesh's Profile Picture" loading="lazy" /></a>
                   </div>
                 </div>
                 <div class="grid-main">
@@ -172,8 +192,8 @@
             <!-- ============ social section icons end ==============-->
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <!-- ============ About section start ==============-->
     <div class="section" id="about">
@@ -182,7 +202,7 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <div class="card-body">
-                <div class="h4 mt-0 title">About</div>
+                <div class="h4 mt-0 title">About Me</div>
                 <p>
                   Hello! I am Vignesh M. Web Developer and Python programmer.
                 </p>
@@ -613,7 +633,7 @@
                       target="_blank"
                     >
                       <figure class="cc-effect">
-                        <img src="images/project3.jpeg" alt="Image" />
+                        <img src="images/project3.jpeg" alt="Pathfinders Project" loading="lazy" />
                         <figcaption>
                           <div class="h4">Pathfinders</div>
                           <p>AI based Chatbot</p>
@@ -1333,8 +1353,8 @@
     <script src="js/core/popper.min.js?ver=1.1.0"></script>
     <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
-    <script src="js/aos.js?ver=1.1.0"></script>
-    <script src="scripts/main.js?ver=1.1.0"></script>
+    <script src="js/aos.js" defer></script>
+    <script src="scripts/main.js" defer></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
