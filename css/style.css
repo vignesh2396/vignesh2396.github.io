@@ -61,12 +61,8 @@ hr {
     width        : 4%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2
+{
     font-weight: 400;
     font-family: 'Sacramento', 'cursive';
 }
@@ -185,7 +181,7 @@ a.bold-text {
     transform: scale(1.06, 1.06);
 }
 
-.fa-vimeo {
+.fa-vimeo-v {
     font-size  : 2rem;
     padding-top: 1rem;
 }
@@ -211,13 +207,6 @@ span.btn-bg {
     font-family: 'Sacramento', 'cursive';
     font-size  : 4.5rem;
     margin     : 1rem 0;
-}
-
-#programmer {
-    font-size  : 3rem;
-    font-style : italic;
-    font-weight: normal;
-    line-height: 2rem;
 }
 
 .pro {
@@ -508,32 +497,6 @@ span.btn-bg {
     }
 }
 
-#back-to-top-btn {
-    display                   : none;
-    position                  : fixed;
-    bottom                    : 20px;
-    right                     : 20px;
-    font-size                 : 26px;
-    width                     : 50px;
-    height                    : 50px;
-    background-color          : #fff;
-    color                     : #333;
-    cursor                    : pointer;
-    outline                   : none;
-    border-radius             : 20%;
-    transition-duration       : 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-property       : background-color, color;
-}
-
-#back-to-top-btn i {
-    height         : 100%;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    color          : var(--btn-bg);
-}
-
 /* Animations */
 .btnEntrance {
     animation-duration : 0.5s;
@@ -680,3 +643,19 @@ a.btn:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
+
+.text-justify {
+  text-align: justify;
+}
+
+
+/* Timeline vertical line */
+  .timeline {
+    border-left: 3px solid #0d6efd;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .timeline li span {
+    width: 15px;
+    height: 15px;
+  }
