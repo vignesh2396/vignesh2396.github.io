@@ -72,6 +72,7 @@ a.bold-text {
 }
 
 /* Body section */
+
 /* Profile Page Background Style */
 .page-header {
     background: rgba(44, 44, 44, 0.2);
@@ -149,11 +150,6 @@ a.bold-text {
 
 .cc-profile-image a:hover img {
     transform: scale(1.06, 1.06);
-}
-
-.fa-vimeo-v {
-    font-size  : 2rem;
-    padding-top: 1rem;
 }
 
 /* Profile Page Social button Style */
@@ -323,7 +319,6 @@ span.btn-bg {
 /* Timeline vertical line */
   .timeline {
     border-left: 3px solid #0d6efd;
-    /* margin-left: 20px; */
     padding-left: 20px;
   }
   .timeline li span {

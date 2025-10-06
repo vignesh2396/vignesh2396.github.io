@@ -1,0 +1,146 @@
+.bg-primary {
+    background-color: var(--dviolet) !important;
+}
+
+/* Nav bar */
+
+.navbar.navbar-transparent {
+    background-color: transparent !important;
+    box-shadow: none;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.sidebar-collapse .navbar .navbar-translate {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    transform: translate3d(0px, 0, 0);
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.nav-open .sidebar-collapse .navbar-translate {
+    transform: translate3d(-300px, 0, 0);
+}
+
+.nav-open .sidebar-collapse.menu-on-left .navbar-translate {
+    transform: translate3d(300px, 0, 0);
+}
+
+.burger-menu .navbar .navbar-translate {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    transform: translate3d(0px, 0, 0);
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.nav-open .burger-menu.menu-on-left .navbar .navbar-translate {
+    transform: translate3d(300px, 0, 0);
+}
+
+.nav-open .burger-menu .navbar .navbar-translate {
+    transform: translate3d(-300px, 0, 0);
+}
+
+.burger-menu.menu-on-left .navbar-brand {
+    float: right;
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.navbar .navbar-brand {
+    text-transform: uppercase;
+    font-size: 0.8571em;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.625rem;
+}
+
+.navbar .navbar-toggler {
+    width: 37px;
+    height: 27px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.navbar .navbar-toggler.navbar-toggler-left {
+    position: relative;
+    left: 0;
+    padding-left: 0;
+}
+
+.navbar .navbar-toggler:hover .navbar-toggler-bar.bar2 {
+    width: 22px;
+}
+
+.navbar .button-dropdown .navbar-toggler-bar:nth-child(2) {
+    width: 17px;
+}
+
+.sidebar-collapse .navbar .navbar-toggler-bar {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 1px;
+    border-radius: 1px;
+    background: #FFFFFF;
+}
+
+.sidebar-collapse .navbar .navbar-toggler-bar+.navbar-toggler-bar {
+    margin-top: 7px;
+}
+
+.sidebar-collapse .navbar .navbar-toggler-bar.bar2 {
+    width: 17px;
+    transition: width .2s linear;
+}
+
+.sidebar-collapse .navbar .toggled .navbar-toggler-bar {
+    width: 24px;
+}
+
+.sidebar-collapse .navbar .toggled .navbar-toggler-bar+.navbar-toggler-bar {
+    margin-top: 5px;
+}
+
+.burger-menu .navbar .navbar-toggler-bar {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 1px;
+    border-radius: 1px;
+    background: #FFFFFF;
+}
+
+.burger-menu .navbar .navbar-toggler-bar+.navbar-toggler-bar {
+    margin-top: 7px;
+}
+
+.burger-menu .navbar .navbar-toggler-bar.bar2 {
+    width: 17px;
+    transition: width .2s linear;
+}
+
+.burger-menu .navbar.bg-white:not(.navbar-transparent) .navbar-toggler-bar {
+    background: #888;
+}
+
+.burger-menu .navbar .toggled .navbar-toggler-bar {
+    width: 24px;
+}
+
+.burger-menu .navbar .toggled .navbar-toggler-bar+.navbar-toggler-bar {
+    margin-top: 5px;
+}
+
+
+/* Logo */
+.fa-vimeo-v {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
