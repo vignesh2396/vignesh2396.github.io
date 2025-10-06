@@ -1,8 +1,18 @@
-Edunet portfolio
+portfolio
 
 ------------------------------------------------------------------------
 
-changes made - 26/00/2025
+changes made - 06/10/2025
+
+Updated Education qualification section in index.html.
+Removed unused styles in style.css. 
+Added details in header section. 
+Edited the professional skills section
+Removed digital badge and contact section.
+Rearranged the order of headings
+------------------------------------------------------------------------
+
+changes made - 26/09/2025
 
 Updated index.html with new meta tags, social links, icons.
 revised About Me and Basic Information sections.
