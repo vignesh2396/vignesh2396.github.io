@@ -1,23 +1,28 @@
-portfolio
+------------------------------------------------------------------------
 
+changes made - 19/10/2025
+
+- Completed removed old project section and create new project section
+- Added new Linkedin Article section
+- Added images for articles
 ------------------------------------------------------------------------
 
 changes made - 06/10/2025
 
-Updated Education qualification section in index.html.
-Removed unused styles in style.css. 
-Added details in header section. 
-Edited the professional skills section
-Removed digital badge and contact section.
-Rearranged the order of headings
+- Updated Education qualification section in index.html.
+- Removed unused styles in style.css. 
+- Added details in header section. 
+- Edited the professional skills section
+- Removed digital badge and contact section.
+- Rearranged the order of headings
 ------------------------------------------------------------------------
 
 changes made - 26/09/2025
 
-Updated index.html with new meta tags, social links, icons.
-revised About Me and Basic Information sections.
-Modernized the Professional Skills and Education sections for clarity and relevance. 
-Refreshed CSS files to adjust typography, icon classes, and remove unused styles. 
+- Updated index.html with new meta tags, social links, icons.
+- revised About Me and Basic Information sections.
+- Modernized the Professional Skills and Education sections for clarity and relevance. 
+- Refreshed CSS files to adjust typography, icon classes, and remove unused styles. 
 ------------------------------------------------------------------------
 
 changes made - 27/05/2021
