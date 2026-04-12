@@ -155,12 +155,12 @@ a.bold-text {
 /* Profile Page Social button Style */
 
 .btn-bg {
-    background-color: var(--primary-color);
+    background-color: var(--dviolet);
     transition: background-color 0.3s;
 }
 
 .btn-bg:hover {
-    background-color: var(--btn-bg-d);
+    background-color: var(--design);
 }
 
 span.btn-bg {

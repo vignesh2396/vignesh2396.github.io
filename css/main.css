@@ -121,7 +121,7 @@
 }
 
 .btn-primary {
-  background-color: #378C3F;
+  background-color: var(--dviolet);
   color           : #FFFFFF;
 }
 
@@ -136,7 +136,7 @@
 .show>.btn-primary.dropdown-toggle,
 .show>.btn-primary.dropdown-toggle:focus,
 .show>.btn-primary.dropdown-toggle:hover {
-  background-color: #40a249;
+  background-color: var(--design);
   color           : #FFFFFF;
   box-shadow      : none;
 }
